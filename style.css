@@ -1,0 +1,117 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+html{
+    background: hsl(217, 19%, 24%);
+    box-sizing: border-box;
+    font-family: 'Manrope',sans-serif;
+    font-weight: 800;
+}
+
+
+.main_container {
+    overflow: hidden;
+    width: 500px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: hsl(217, 19%, 38%);
+    border-radius: 20px;
+    padding: 30px 40px ;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+}
+
+.top {
+    text-align: center;
+    width: 100%;
+}
+
+.top p {
+    letter-spacing: 4px;
+    font-size: 14px;
+    color: hsl(150, 100%, 66%);
+    font-weight: lighter;
+}
+
+.top p span {
+    color:hsl(150, 100%, 66%) ;
+    letter-spacing: 4px;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.top h2{
+    color: white;
+}
+
+.top h2 span {
+    color: white;
+}
+
+.middle {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.middle2 {
+    display:none;
+}
+
+.c1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: hsl(150, 100%, 66%);
+    cursor: pointer;
+}
+
+.dice :hover {
+    background: hsl(150, 100%, 66%);
+    box-shadow: 0 0 50px hsl(150, 100%, 66%);
+}
+
+.dice {
+    position: absolute;
+    top: 67%;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+}
+
+.c1 svg {
+    margin: 0;
+    padding: 0;
+    transform: scale(1.1);
+}
+@media only screen and (max-width:400px) {
+
+    .main_container {
+        overflow: hidden;
+        width: 270px;
+        height: 300px;
+        border-radius: 10px;
+    }
+
+    .middle1 {
+        display: none;
+    }
+
+    .middle2 {
+        display: block;
+    }
+    
+    .dice {
+        top: 79%;
+    }
+
+}
